@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:id="@+id/card">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#e8e8e8"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To,"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:id="@+id/t1"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/towhom"
+                    android:layout_below="@+id/t1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t2"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/towhom"
+                    android:text="Company Name\nCOmpany address"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:layout_marginTop="20sp"
+                    android:text="Date"
+                    android:layout_below="@+id/t2"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear"
+                    android:layout_below="@+id/date">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fromdate"
+                        android:layout_marginTop="20sp"
+                        android:text="FromDate"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/todate"
+                        android:layout_weight="1"
+                        android:layout_marginTop="20sp"
+                        android:text="ToDate"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/respect"
+                    android:layout_marginTop="20sp"
+                    android:text="Respected sir/mam,"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/linear"
+                    android:textColor="#000000"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/main"
+                    android:layout_marginTop="20dp"
+                    android:gravity="top"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/backk"
+                    android:layout_below="@+id/respect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/last"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_below="@+id/main"
+                android:text="thanku"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp"
+                    android:id="@+id/Submit"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttonback"
+                    android:layout_below="@+id/last"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
